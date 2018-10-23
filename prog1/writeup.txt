@@ -1,0 +1,7 @@
+1. Edgar Silveyra and Daniel Wilson
+
+2. The program is completely functional. However, it has some drawbacks due to how we programmed it. The secret word cannot include '-' character. Additionally, the length of the secret word cannot exceed 99 characters. Also, using gets() in our code is unsafe security-wise. We tried to remove gets and use fgets() instead, but ran into strange bugs. Given more time, we would have tried to fix these bugs by changing the way our program processes the number of remaining guesses and the way it determines whether the player has won.
+
+3. We tested it using several methods. For one, we would try small and large words and would try to "lose" and "win" on the client side. We also used GDB to debug.
+
+4. Sending and receiving data between the host and the client was difficult. We initially used one send to pass both the board and guesses from the server to the client and then would have the client parse the buffer. This was because many of our send or recieve calls would result in segfault or broken pipe errors and we were unable to figure out why. However, working on this project helped us to figure out how to use send and recv.

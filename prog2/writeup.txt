@@ -1,0 +1,12 @@
+1. Edgar Silveyra and Daniel Wilson
+
+2. There are no known issues with the program.
+
+3. We tested the program by executing it in four setups. 
+	-Daniel as clients, Edgar as server
+	-Edgar as clients, Daniel as server
+	-Daniel as clients and server
+	-Edgar as clients and server
+In each of these configurations, we tested connection, gameplay, and timeout functionality. The program functioned correctly in all these cases.
+
+4.The most challenging aspect of this project was correctly implementing the timeout. We realized after implementing a simple timeout that the client would still send the user's guess, resulting in bugs. We were able to implement a non-blocking recieve call for client to check if the timeout has already occured. This fixed our issues and allowed our code to run without errors.

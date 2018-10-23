@@ -1,0 +1,29 @@
+1. The program we are implementing is a 2 player game. 
+
+At the start of each round, each user is given a set of characters and is asked to make a word out of these characters in a time limit. If the word is not in the server's dictionary or has already been used, the player loses that round. If the time runs out before the player submits a word, that player also loses that round. If the user submits a valid word, that player gets a point and it is the other player's turn. The game switches between each players turn, until a player loses the round, or until one player gets 3 points. 
+
+When a player loses around, the server generates a new board and starts a new round, this time starting with the other player. The server continues with new rounds until one player earns 3 points, at which point the game ends.
+
+The program must ne able to have multiple game sessions running at the same time. The game must also consult a dictionary stored in a trie.c file to check if a word is valid.
+
+2. The part we anticipate being the hardest is allowing two clients to access the same data set on the server. In the previous project, the clients did not have to interact with each other. Now that they do, we will need to facilitate that through data on the server that can be accessed by two clients.
+
+
+3. Class notes, textbook, and office hours.
+
+
+4. We will use the implementation of trie provided by Geeks for Geeks.
+    https://www.geeksforgeeks.org/trie-insert-and-search/
+
+5. 	Saturday 1-4
+	Sunday 2:30-4:30
+	Monday 4-6 
+	Tuesday 6-8
+	Wednesday 4-6
+	Thursday 1:30-4
+
+
+Questions:
+	-How long should the board be?
+	-Should we have multiples of the same character in the board?
+	

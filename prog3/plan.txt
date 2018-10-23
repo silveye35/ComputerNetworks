@@ -1,0 +1,9 @@
+1. This program is implementing a chat room where the server allows participant clients to talk to each other. It also allows observer clients to join who can see what is being said, but cannot say anything. Clients may join or leave at any time and choose a username when they join. Since clients can send messages at any time and must be able to see new messages at any time, only non-blocking send and recv calls can be used. 
+
+
+2. The most challenging aspects of this project will be 
+	1. Using select() or poll(). We were able to complete program 2 without using select() by using the nonblocking socket flag to make specific recv() calls nonblocking. For this reason we haven't had any experience using select(), and we expect it to be challenging.
+	2. In previous programs we were able to call fork() after the required number of users connected to the server. For this program, we cannot do this because new users must always be able to join the server. This may create challenges to the program.  
+
+
+3.Class notes, textbook, and office hours.

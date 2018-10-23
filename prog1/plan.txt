@@ -1,0 +1,15 @@
+1. In prog1, we are asked to implement a "hangman" type game hosted by a server. When the client connects to the server, the server receives a "secret" word. When the game begins, the client (player) is allowed to guess letters. If that letter is present in the secret word, then all instances of the letter are revealed. If not, the number of guesses is decremented. This number is initialized to the number of letters in the word. When the player wins or loses, the connection established is closed.
+
+2. The hardest part will be connecting the client to the server and allowing the client to interact with the program hosted by the server. Likwise, understanding how the server will host the game will also be a challenge.
+
+3. Class notes, textbook, and office hours.
+
+4. M: 4-5
+   T: 3-5
+   W: 4-5
+   R: 1:30-3:30
+   F: 3-5
+   Sat: 2-4
+   Sun: 2-4
+
+Note: times may vary.
